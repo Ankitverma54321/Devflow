@@ -25,7 +25,7 @@ export const GlobalSearch = () => {
           placeholder="Search Globally"
           value=""
           className="paragraph-regular no-focus placeholder background-light800_darkgradient border-none
-        shadow-none outline-none"
+         shadow-none outline-none"
         />
       </div>
     </div>

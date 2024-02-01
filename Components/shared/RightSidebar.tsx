@@ -2,38 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import RenderTag from "./RenderTag";
-
-const hotQuestions = [
-  {
-    _id: 1,
-    title: "How do I use Express as a custom server in NextJs?",
-  },
-  {
-    _id: 2,
-    title:
-      "Best practices for data fetching in a Next.js application with Server-Side",
-  },
-  {
-    _id: 3,
-    title: "Redux Toolkit Not Updating State as Expected",
-  },
-  {
-    _id: 4,
-    title: "Async/Await Function Not Handling Errors Properly",
-  },
-  {
-    _id: 5,
-    title: "How to Perfectly Center a Div with Tailwind CSS?",
-  },
-];
-
-const popularTags = [
-  { _id: 1, name: "javaScript", totalQuestions: 14 },
-  { _id: 2, name: "Next.js", totalQuestions: 10 },
-  { _id: 3, name: "React", totalQuestions: 25 },
-  { _id: 4, name: "Machine Learning", totalQuestions: 15 },
-  { _id: 5, name: "goLang", totalQuestions: 5 },
-];
+import { hotQuestions, popularTags } from "@/constants";
 
 export const RightSidebar = () => {
   return (
