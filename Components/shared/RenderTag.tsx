@@ -15,8 +15,7 @@ const RenderTag = ({ _id, name, totalQuestions, showCount }: props) => {
   return (
     <Link href={`/tags/${_id}`} className="flex justify-between gap-2">
       <Badge
-        variant="outline"
-        className="subtle-medium backgorund-light800_dark300 
+        className="subtle-medium background-light800_dark400 
       text-light400_light500 rounded-md px-4 py-2 uppercase"
       >
         {name}

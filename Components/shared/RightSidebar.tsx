@@ -45,7 +45,7 @@ export const RightSidebar = () => {
     >
       <div>
         <h3 className="h3-bold text-dark200_light900">Top Questions</h3>
-        <div className="mt-7 flex w-full flex-col gap-[30px]">
+        <div className="mt-7 flex w-full flex-col gap-[15px]">
           {hotQuestions.map((question) => (
             <Link
               href={`/questions/${question._id}`}
@@ -66,7 +66,7 @@ export const RightSidebar = () => {
           ))}
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-10">
         <h3 className="h3-bold text-dark200_light900">Popular Tags</h3>
         <div className="mt-7 flex flex-col gap-4">
           {popularTags.map((tag) => (
