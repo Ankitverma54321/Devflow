@@ -10,7 +10,7 @@ export const GlobalSearch = () => {
   "
     >
       <div
-        className="background-light800_darkgradient 
+        className="background-light800_dark300 
     relative flex min-h-[56px] grow items-center gap-1 rounded-xl px-4"
       >
         <Image

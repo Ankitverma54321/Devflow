@@ -16,7 +16,7 @@ const HomeFilters = () => {
         ${
           active === item.value
             ? "bg-primary-100 text-primary-500"
-            : " bg-light-800 text-light-500 "
+            : " bg-light-700 text-dark-500 "
         }`}
         >
           {item.name}
