@@ -8,6 +8,9 @@
   .background-light900_dark200 {
     @apply bg-light-900 dark:bg-dark-200;
   }
+  .background-light700_dark200 {
+    @apply bg-slate-100 dark:bg-dark-400;
+  }
   .background-light900_dark300 {
     @apply bg-light-900 dark:bg-dark-300;
   }

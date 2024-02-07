@@ -12,7 +12,7 @@ export const RightSidebar = () => {
     border-1 p-6 pt-36 shadow-light-300 dark:shadow-none max-xl:hidden
     "
     >
-      <div>
+      <div className="background-light700_dark200 px-4 py-4 rounded-lg">
         <h3 className="h3-bold text-dark200_light900">Top Questions</h3>
         <div className="mt-7 flex w-full flex-col gap-[15px]">
           {hotQuestions.map((question) => (
@@ -35,9 +35,9 @@ export const RightSidebar = () => {
           ))}
         </div>
       </div>
-      <div className="mt-10">
-        <h3 className="h3-bold text-dark200_light900">Popular Tags</h3>
-        <div className="mt-7 flex flex-col gap-4">
+      <div className="mt-10 background-light700_dark200 px-4 py-4 rounded-lg">
+        <h3 className="h3-bold text-dark200_light900 ">Popular Tags</h3>
+        <div className="mt-7 flex flex-col gap-4 ">
           {popularTags.map((tag) => (
             <RenderTag
               key={tag._id}

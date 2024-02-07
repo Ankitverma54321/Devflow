@@ -15,15 +15,16 @@ export interface IQuestion extends Document {
 const QuestionSchema = new Schema({
   title: { type: String, required: true },
   content: { type: String, required: true },
+
   tags: [{ type: Schema.Types.ObjectId, ref: "Tag" }],
   views: { type: Number, default: 0 },
-  upvotes: [{ types: Schema.Types.ObjectId, ref: "User" }],
-  downvotes: [{ types: Schema.Types.ObjectId, ref: "User" }],
+  upvotes: [{ type: Schema.Types.ObjectId, ref: "User" }], // Corrected from 'types' to 'type'
+  downvotes: [{ type: Schema.Types.ObjectId, ref: "User" }], // Corrected from 'types' to 'type'
   author: { type: Schema.Types.ObjectId, ref: "User" },
   answers: [{ type: Schema.Types.ObjectId, ref: "Answer" }],
   createdAt: { type: Date, default: Date.now() },
 });
 
-const Question = models.Questin || model("Question", QuestionSchema);
+const Question = models.Question || model("Question", QuestionSchema); // Corrected from 'Questin' to 'Question'
 
 export default Question;
